@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green India | Sustainable Development</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --green: #123d2b;
+    --green2: #1c6747;
+    --lime: #c6e88a;
+    --cream: #f6f7ef;
+    --text: #26382e;
+    --muted: #6a796e;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-padding-top: 90px;
+}
+
+/* NAVIGATION */
+
+header {
+    width: 100%;
+    padding: 17px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(18,61,43,0.97);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: var(--lime);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #e7eee8;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--lime);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 690px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+    linear-gradient(90deg, rgba(5,32,21,0.88),
+    rgba(5,32,21,0.30)),
+    url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05")
+    center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 850px;
+    animation: appear 1s ease;
+}
+
+.tag {
+    display: inline-block;
+    color: var(--lime);
+    border: 1px solid rgba(198,232,138,0.6);
+    border-radius: 30px;
+    padding: 8px 17px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.13;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--lime);
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 17px;
+    color: #e3ece4;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--lime);
+    color: var(--green);
+    padding: 14px 27px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+    padding: 13px 27px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--green);
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 90px 8%;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-label {
+    text-align: center;
+    color: var(--green2);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: var(--green);
+    font-size: clamp(30px, 4vw, 45px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.section-intro {
+    max-width: 780px;
+    text-align: center;
+    color: var(--muted);
+    margin: 0 auto 48px;
+    font-size: 16px;
+}
+
+.green-section {
+    background: #e9f0e7;
+}
+
+/* INTRODUCTION */
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.intro-image {
+    min-height: 390px;
+    border-radius: 20px;
+    background:
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e")
+    center/cover;
+    box-shadow: 18px 18px 0 #d2e3c7;
+}
+
+.intro-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    color: var(--green);
+    margin-bottom: 15px;
+}
+
+.intro-text p {
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+
+.quote {
+    background: white;
+    border-left: 5px solid #77a75e;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-style: italic;
+    color: var(--green);
+}
+
+/* CARDS */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 28px 23px;
+    border-radius: 17px;
+    box-shadow: 0 7px 25px rgba(25,65,38,0.06);
+    transition: 0.35s;
+    border: 1px solid #edf1e9;
+}
+
+.card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 16px 35px rgba(25,65,38,0.13);
+}
+
+.card-icon {
+    width: 57px;
+    height: 57px;
+    border-radius: 15px;
+    background: #e8f3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: var(--green);
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* CHALLENGES */
+
+.challenge-card {
+    background: #173e2e;
+    color: white;
+    padding: 28px;
+    border-radius: 17px;
+    transition: 0.3s;
+}
+
+.challenge-card:hover {
+    background: #246346;
+    transform: translateY(-7px);
+}
+
+.challenge-card .card-icon {
+    background: rgba(255,255,255,0.12);
+}
+
+.challenge-card h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.challenge-card p {
+    color: #d5e2d7;
+    font-size: 14px;
+}
+
+/* INITIATIVES */
+
+.initiative-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.initiative {
+    background: white;
+    padding: 27px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid #e5ece2;
+    transition: 0.3s;
+}
+
+.initiative:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.initiative-icon {
+    min-width: 55px;
+    height: 55px;
+    background: #e7f2e3;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.initiative h3 {
+    color: var(--green);
+    margin-bottom: 8px;
+}
+
+.initiative p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* SDG */
+
+.sdg-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.sdg {
+    background: white;
+    border-radius: 14px;
+    padding: 20px 12px;
+    text-align: center;
+    border: 1px solid #e6ece3;
+    transition: 0.3s;
+}
+
+.sdg:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.sdg-number {
+    font-size: 12px;
+    color: var(--green2);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.sdg-icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.sdg h3 {
+    color: var(--green);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* PROGRESS */
+
+.progress-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.progress-card {
+    padding: 35px;
+    border-radius: 18px;
+    background: white;
+}
+
+.progress-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--green);
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.progress-card li {
+    margin: 12px 0 12px 20px;
+    color: var(--muted);
+}
+
+/* FUTURE */
+
+.future {
+    background:
+    linear-gradient(rgba(8,48,30,0.87),
+    rgba(8,48,30,0.87)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b")
+    center/cover;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 75px 30px;
+}
+
+.future h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.future p {
+    max-width: 750px;
+    margin: auto;
+    color: #e2eee3;
+}
+
+/* REFERENCES */
+
+.reference-list {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.reference-list li {
+    margin: 14px 0 14px 20px;
+    color: var(--muted);
+}
+
+.reference-list a {
+    color: var(--green2);
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.reference-list a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    background: #103d2b;
+    color: white;
+    padding: 45px 8%;
+    text-align: center;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--lime);
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #d4e3d6;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.footer-line {
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 25px auto;
+    max-width: 650px;
+}
+
+/* ANIMATION */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sdg-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 570px;
+        padding: 70px 7%;
+    }
+
+    .card-grid,
+    .initiative-grid,
+    .progress-box {
+        grid-template-columns: 1fr;
+    }
+
+    .sdg-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+
+    .intro-image {
+        min-height: 280px;
+    }
+
+    .future h2 {
+        font-size: 31px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌿 GREEN<span>INDIA</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#growth">Growth</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#initiatives">Initiatives</a>
+        <a href="#sdgs">SDGs</a>
+        <a href="#future">Future</a>
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="tag">Environmental Studies · CA1</div>
+
+        <h1>From Growth to <span>Sustainability</span></h1>
+
+        <p>
+            India's Journey Towards Sustainable Development.
+            Discover how a growing nation can build a greener,
+            healthier and more sustainable tomorrow.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn">Discover More ↗</a>
+            <a href="#sdgs" class="btn-outline">Explore 17 SDGs</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+<div class="container">
+
+    <div class="section-label">Understanding the Journey</div>
+    <h2 class="section-title">Growth with a Greener Vision</h2>
+
+    <p class="section-intro">
+        Development is not only about building cities,
+        industries and technology. It is also about
+        protecting the natural world that supports life.
+    </p>
+
+    <div class="intro-grid">
+
+        <div class="intro-image"></div>
+
+        <div class="intro-text">
+            <h3>What is Sustainable Development?</h3>
+
+            <p>
+                Sustainable development means meeting the needs
+                of the present generation without compromising
+                the ability of future generations to meet
+                their own needs.
+            </p>
+
+            <p>
+                India is developing in agriculture, technology,
+                industries and infrastructure. At the same time,
+                it must protect forests, water, air and biodiversity.
+            </p>
+
+            <p>
+                The goal is to create a balance between
+                economic progress, social well-being and
+                environmental protection.
+            </p>
+
+            <div class="quote">
+                "Development should improve life today
+                without taking away the opportunities
+                of tomorrow."
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<!-- GROWTH -->
+
+<section class="green-section" id="growth">
+<div class="container">
+
+    <div class="section-label">India's Progress</div>
+    <h2 class="section-title">The Growth Story of India</h2>
+
+    <p class="section-intro">
+        India's growth is supported by several important
+        sectors that create opportunities and improve
+        the quality of life.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <div class="card-icon">🌾</div>
+            <h3>Agriculture</h3>
+            <p>
+                Agriculture supports livelihoods and food
+                security. Sustainable farming, soil protection
+                and efficient irrigation help conserve resources.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🏭</div>
+            <h3>Industries</h3>
+            <p>
+                Industries support production, employment
+                and economic growth. Cleaner technologies
+                can reduce pollution and waste.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">💻</div>
+            <h3>Technology</h3>
+            <p>
+                Digital services and innovation support
+                education, communication, business and
+                access to public services.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🚆</div>
+            <h3>Infrastructure</h3>
+            <p>
+                Roads, railways, housing and public transport
+                connect communities and support development.
+            </p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<!-- CHALLENGES -->
+
+<section id="challenges">
+<div class="container">
+
+    <div class="section-label">The Other Side of Growth</div>
+    <h2 class="section-title">Environmental Challenges</h2>
+
+    <p class="section-intro">
+        Rapid development can put pressure on natural
+        resources. Recognising these challenges is
+        the first step towards solving them.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="challenge-card">
+            <div class="card-icon">🌫️</div>
+            <h3>Air Pollution</h3>
+            <p>
+                Emissions from vehicles, industries and
+                other activities affect air quality
+                and human health.
+            </p>
+        </div>
+
+        <div class="challenge-card">
+            <div class="card-icon">💧</div>
+            <h3>Water Scarcity</h3>
+            <p>
+                Increasing demand, groundwater use
+                and water pollution create challenges
+                for clean water access.
+            </p>
+        </div>
+
+        <div class="challenge-card">
+            <div class="card-icon">🌳</div>
+            <h3>Deforestation</h3>
+            <p>
+                Forest loss affects wildlife habitats,
+                soil quality and biodiversity.
+            </p>
+        </div>
+
+        <div class="challenge-card">
+            <div class="card-icon">🗑️</div>
+            <h3>Waste Pollution</h3>
+            <p>
+                Plastic and unmanaged waste pollute
+                land and water. Recycling and proper
+                disposal are essential.
+            </p>
+        </div>
+
+        <div class="challenge-card">
+            <div class="card-icon">🌡️</div>
+            <h3>Climate Change</h3>
+            <p>
+                Changing temperatures and weather
+                patterns affect agriculture,
+                ecosystems and communities.
+            </p>
+        </div>
+
+        <div class="challenge-card">
+            <div class="card-icon">🐘</div>
+            <h3>Biodiversity Loss</h3>
+            <p>
+                Habitat destruction and environmental
+                pressure threaten plants, animals
+                and ecosystems.
+            </p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<!-- INITIATIVES -->
+
+<section class="green-section" id="initiatives">
+<div class="container">
+
+    <div class="section-label">Actions for Change</div>
+    <h2 class="section-title">India's Green Initiatives</h2>
+
+    <p class="section-intro">
+        Government programmes are helping India move
+        towards cleaner energy, better sanitation,
+        water conservation and environmental protection.
+    </p>
+
+    <div class="initiative-grid">
+
+        <div class="initiative">
+            <div class="initiative-icon">☀️</div>
+            <div>
+                <h3>National Solar Mission</h3>
+                <p>
+                    Promotes solar power and supports
+                    the growth of renewable energy
+                    in India's energy system.
+                </p>
+            </div>
+        </div>
+
+        <div class="initiative">
+            <div class="initiative-icon">🧹</div>
+            <div>
+                <h3>Swachh Bharat Mission</h3>
+                <p>
+                    Focuses on cleanliness, sanitation
+                    and improving waste management.
+                </p>
+            </div>
+        </div>
+
+        <div class="initiative">
+            <div class="initiative-icon">🌊</div>
+            <div>
+                <h3>Namami Gange Programme</h3>
+                <p>
+                    Works towards reducing pollution
+                    and conserving the River Ganga.
+                </p>
+            </div>
+        </div>
+
+        <div class="initiative">
+            <div class="initiative-icon">🚰</div>
+            <div>
+                <h3>Jal Jeevan Mission</h3>
+                <p>
+                    Aims to improve access to safe
+                    drinking water through household
+                    tap connections in rural areas.
+                </p>
+            </div>
+        </div>
+
+        <div class="initiative">
+            <div class="initiative-icon">🌲</div>
+            <div>
+                <h3>Green India Mission</h3>
+                <p>
+                    Supports forest restoration,
+                    tree cover improvement and
+                    biodiversity conservation.
+                </p>
+            </div>
+        </div>
+
+        <div class="initiative">
+            <div class="initiative-icon">🏙️</div>
+            <div>
+                <h3>Smart Cities Mission</h3>
+                <p>
+                    Supports improved urban services,
+                    infrastructure and technology
+                    in Indian cities.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<!-- SDGs -->
+
+<section id="sdgs">
+<div class="container">
+
+    <div class="section-label">Global Goals · 2030 Agenda</div>
+    <h2 class="section-title">The 17 Sustainable Development Goals</h2>
+
+    <p class="section-intro">
+        Adopted by the United Nations in 2015,
+        the 17 SDGs provide a shared global plan
+        to end poverty, protect the planet and
+        improve lives by 2030.
+    </p>
+
+    <div class="sdg-grid">
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 01</div>
+            <div class="sdg-icon">🤝</div>
+            <h3>No Poverty</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 02</div>
+            <div class="sdg-icon">🌾</div>
+            <h3>Zero Hunger</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 03</div>
+            <div class="sdg-icon">❤️</div>
+            <h3>Good Health and Well-being</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 04</div>
+            <div class="sdg-icon">📚</div>
+            <h3>Quality Education</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 05</div>
+            <div class="sdg-icon">⚖️</div>
+            <h3>Gender Equality</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 06</div>
+            <div class="sdg-icon">💧</div>
+            <h3>Clean Water and Sanitation</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 07</div>
+            <div class="sdg-icon">☀️</div>
+            <h3>Affordable and Clean Energy</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 08</div>
+            <div class="sdg-icon">📈</div>
+            <h3>Decent Work and Economic Growth</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 09</div>
+            <div class="sdg-icon">🏗️</div>
+            <h3>Industry, Innovation and Infrastructure</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 10</div>
+            <div class="sdg-icon">🌍</div>
+            <h3>Reduced Inequalities</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 11</div>
+            <div class="sdg-icon">🏙️</div>
+            <h3>Sustainable Cities and Communities</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 12</div>
+            <div class="sdg-icon">♻️</div>
+            <h3>Responsible Consumption and Production</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 13</div>
+            <div class="sdg-icon">🌡️</div>
+            <h3>Climate Action</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 14</div>
+            <div class="sdg-icon">🐟</div>
+            <h3>Life Below Water</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 15</div>
+            <div class="sdg-icon">🌳</div>
+            <h3>Life on Land</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 16</div>
+            <div class="sdg-icon">⚖️</div>
+            <h3>Peace, Justice and Strong Institutions</h3>
+        </div>
+
+        <div class="sdg">
+            <div class="sdg-number">GOAL 17</div>
+            <div class="sdg-icon">🤝</div>
+            <h3>Partnerships for the Goals</h3>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+
+<section class="green-section">
+<div class="container">
+
+    <div class="section-label">Measuring the Journey</div>
+    <h2 class="section-title">Progress and Challenges</h2>
+
+    <p class="section-intro">
+        India's journey includes important achievements
+        as well as areas that require further improvement.
+    </p>
+
+    <div class="progress-box">
+
+        <div class="progress-card">
+            <h3>✓ Areas of Progress</h3>
+            <ul>
+                <li>Expansion of renewable energy efforts.</li>
+                <li>Greater attention to sanitation and cleanliness.</li>
+                <li>Programmes for improving drinking water access.</li>
+                <li>Growing awareness of environmental protection.</li>
+                <li>Use of digital technology in public services.</li>
+            </ul>
+        </div>
+
+        <div class="progress-card">
+            <h3>↗ Areas for Improvement</h3>
+            <ul>
+                <li>Reducing air and water pollution.</li>
+                <li>Improving waste collection and recycling.</li>
+                <li>Protecting forests and wildlife.</li>
+                <li>Promoting responsible water use.</li>
+                <li>Making sustainable development inclusive.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<!-- FUTURE -->
+
+<section id="future">
+<div class="container">
+
+    <div class="section-label">Looking Ahead</div>
+    <h2 class="section-title">Building a Sustainable Future</h2>
+
+    <p class="section-intro">
+        Every individual can contribute to a sustainable
+        India through everyday choices and collective action.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <div class="card-icon">🌞</div>
+            <h3>Choose Clean Energy</h3>
+            <p>
+                Support renewable energy and use
+                electricity responsibly.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🌳</div>
+            <h3>Protect Nature</h3>
+            <p>
+                Conserve water, plant trees and
+                protect wildlife habitats.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">♻️</div>
+            <h3>Reduce Waste</h3>
+            <p>
+                Reuse materials, avoid unnecessary
+                plastic and recycle responsibly.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🎓</div>
+            <h3>Empower Youth</h3>
+            <p>
+                Students can spread awareness and
+                develop innovative environmental solutions.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="future">
+        <h2>A Greener Tomorrow Starts Today.</h2>
+        <p>
+            A developed India should also be a clean,
+            green, healthy and inclusive India.
+            Economic growth and environmental protection
+            must go hand in hand.
+        </p>
+    </div>
+
+</div>
+</section>
+
+
+<!-- CONCLUSION -->
+
+<section>
+<div class="container">
+
+    <div class="section-label">The Final Message</div>
+    <h2 class="section-title">Conclusion</h2>
+
+    <p class="section-intro">
+        India's journey from growth to sustainability
+        is essential for building a better future.
+        Economic development, social progress and
+        environmental protection must move together.
+        Government initiatives, responsible industries
+        and active citizens all have an important role.
+        By using resources wisely, protecting nature
+        and supporting innovation, India can move
+        towards a sustainable future for everyone.
+    </p>
+
+    <div class="quote">
+        "A sustainable India is not just a dream for
+        the future. It is a responsibility we share today."
+    </div>
+
+</div>
+</section>
+
+
+<!-- REFERENCES -->
+
+<section class="green-section">
+<div class="container">
+
+    <div class="section-label">Explore More</div>
+    <h2 class="section-title">References and Resources</h2>
+
+    <p class="section-intro">
+        Official resources for further information
+        about sustainable development and Indian initiatives.
+    </p>
+
+    <div class="reference-list">
+        <ul>
+            <li>
+                <a href="https://sdgs.un.org/goals" target="_blank">
+                    United Nations – Sustainable Development Goals
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.niti.gov.in/" target="_blank">
+                    NITI Aayog – Government of India
+                </a>
+            </li>
+
+            <li>
+                <a href="https://mnre.gov.in/" target="_blank">
+                    Ministry of New and Renewable Energy
+                </a>
+            </li>
+
+            <li>
+                <a href="https://swachhbharatmission.ddws.gov.in/" target="_blank">
+                    Swachh Bharat Mission
+                </a>
+            </li>
+
+            <li>
+                <a href="https://nmcg.nic.in/" target="_blank">
+                    National Mission for Clean Ganga
+                </a>
+            </li>
+
+            <li>
+                <a href="https://jaljeevanmission.gov.in/" target="_blank">
+                    Jal Jeevan Mission
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moef.gov.in/" target="_blank">
+                    Ministry of Environment, Forest and Climate Change
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+    <h2>GREEN INDIA 🌿</h2>
+
+    <p>From Growth to Sustainability</p>
+    <p>India's Journey Towards Sustainable Development</p>
+    <p>Environmental Studies – CA1</p>
+
+    <div class="footer-line"></div>
+
+    <p>Created for educational purposes</p>
+</footer>
+
+</body>
+</html>
